@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+
+  <script src="Log.js"></script>
+  <script src="Box.js"></script>
+  <script src="Rocket.js"></script>
+
+
+</head>
+
+<body>
+
+  <a-scene background="color:#000000">
+
+    <a-camera position="0 0 10" camera-zoom-out>
+
+    </a-camera>
+
+    <a-entity log="Hi, it's me!"></a-entity>
+
+   
+    <a-entity position="0 0 0" rotation="0 0 0" move-rocket>
+      <a-cone position="0 1.5 0" color="blue" radius-bottom="0.5"></a-cone>
+      <a-cylinder position="0 -1 0" color="purple" radius="0.5" height="4"></a-cylinder>
+      <a-cylinder position="0 -3 0" color="pink" radius="0.5" height="1" drop>
+        <a-triangle position="-0.6 -0.9 -0.9" color="pink"></a-triangle>
+        <a-triangle position="0.6 -0.9 -0.9" color="pink"></a-triangle>
+      </a-cylinder>
+
+    </a-entity>
+  </a-scene>
+
+</body>
+
+</html>
